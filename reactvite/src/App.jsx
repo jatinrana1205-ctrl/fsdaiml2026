@@ -7,6 +7,7 @@ import ICard from './component/ICard'
 import ICardGallery from './component/ICardGallery'
 import ImdbCard from './component/ImdbCard'
 import StateHandling from './component/StateHandling'
+import Imagemanipulation from './component/Imagemanipulation'
 
 function App() {
   
@@ -16,7 +17,8 @@ function App() {
     
        {/* <ICardGallery /> */}
        {/* <ImdbCard /> */}
-     <StateHandling />
+     {/* <StateHandling /> */}
+     <Imagemanipulation />
     </div>
   )
 }
