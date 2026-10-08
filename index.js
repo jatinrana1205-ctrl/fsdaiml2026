@@ -1,93 +1,101 @@
-// //console.log("hello world")
-// //function greet(name,callback) {
-//  //   console.log("Hello" + name);
-//    // callback();
-// //}
-// //function sayBye() {
-//   //  console.log("Goodbye");
-// //}
-// //greet("Jatin", sayBye);
+// function sum(a,b){
+//     return a+b;
+// }
 
-// //function checkEvenOdd(callback) {
-//   //  const num = Math.floor(Math.random() * 100) + 1;
+// function sumWithMsg(clbk,msg){
+//            const result=clbk(20,40);
+//            console.log(msg+":"+result)
+// }
 
-//     //console.log("Random number = " + num);
-
-//     //if (num % 2 === 0) {
-//       //  callback(num + " is even", null);
-//     //} else {
-//       //  callback(num + " is odd", null);
-//     //}
-// //}
-
-// //function result(message, error) {
-//   //  console.log(message);
-// //}
-
-// //checkEvenOdd(result);
+// sumWithMsg(sum,"Hey using calculation with jS")
 
 
-// //console.log("First");
-// //setTimeout(() => {
-//   //  console.log("Second");
-// //}, 1000);
-// // for(i=0;i<100;i++){
-// //     console.log("Second");
-// // }
-
-// // console.log("Third");
-
-// //callback hell
-// // setTimeout(()=>{
-// //     setTimeout(()=>{
-// //         setTimeout(()=>{
-// //             setTimeout(()=>{
-// //                 setTimeout(()=>{
-// //                     setTimeout(()=>{
-// //                         setTimeout(()=>{
-// //                             setTimeout(()=>{
-// //                                 setTimeout(()=>{
-                                    
-// //                                 },1000)
-// //                             },1000)
-// //                         },1000)
-// //                     },1000)
-// //                 },1000)
-// //             },1000)
-// //         },1000)
-// //     },1000)
-// // },1000)
 
 
-// //promises
-   
-// const myPromise=new Promise((resolve,reject)=>{
-//    username="Jatin";
-//    password="1234";
-//    if (username == "Jatin" && password == "1234"){ 
-//     resolve("Successful")
-//    }
-//     else{
-//         reject("username or password is incorrect")
-//     }})
-
-//     // myPromise.then((msg)=>{
-//     //     console.log(msg)
-//     // }).catch((msg)=>{
-//     //     console.log(msg)
-//     // }).finally(()=>{
-//     //     console.log("All the resources have been closed/memory released")
-//     // })
-
-
-//    async function handlelogin(){
-//         try{
-//              await myPromise
-//         }catch(e){
-//             console.log(e)
-//         }
-//         finally{
-//             console.log("All the resources have been closed/memory released")
-//         }
+// function login(msg,error){
+//     if(error){
+//         console.log("Error is"+error)
 //     }
-//     handlelogin();
+//     else{
+//         console.log("Welcome"+msg);
+//     }
+// }
+
+//  function loginVerification(username,password,clbk){
+//    if(username=="ptomer40" && password=="1234556"){
+//     clbk("Success",null);
+//    }else{
+//     clbk(null,"Username or password is incorrect")
+//    }
+
+//  }
+
+//  loginVerification("ptomer40","1234556",login)
+
+
+
+
+//    console.log("First")
+// //    setTimeout(()=>{console.log("Second")},1000)
+// for(i=0;i<10000;i++){
+//     console.log("Second")
+// }
+//    console.log("Third")
+
+
+// callBack hell
+// setTimeout(()=>{
+//     setTimeout(()=>{
+//         setTimeout(()=>{
+//             setTimeout(()=>{
+//                 setTimeout(()=>{
+//                     setTimeout(()=>{
+//                         setTimeout(()=>{
+//                             setTimeout(()=>{
+//                                 setTimeout(()=>{
+
+//                                 },1000)
+//                             },1000)
+//                         },1000)
+//                     },1000)
+//                 },1000)
+//             },1000)
+//         },1000)
+//     },1000)
+// },1000)
+
+
+// Promises 
+
+
+    // const myPromise=new Promise((resolve,reject)=>{
+    //    username="ptomer40";
+    //    password="1234"
+    //    if(username=="ptomer40" && password=="1234"){
+    //     resolve("success")
+    //    }else{
+    //     reject("username or password is incorrect")
+    //    }})
+
+    //    myPromise.then((msg)=>{
+    //      console.log(msg)
+    //    }).catch((msg)=>{
+    //     console.log(msg)
+    //    }).finally(()=>{
+    //     console.log("All the resources have been closed/memory released")
+    //    })
+
+  // async function handleLogin(){
+  //     try{
+  //            await myPromise
+             
+  //     } catch(e){
+  //        console.log(e)
+  //     } 
+  //     finally{
+  //       console.log("All the resources have been closed/memory released")
+  //     }
+  //   }
+  //   handleLogin();
+
+

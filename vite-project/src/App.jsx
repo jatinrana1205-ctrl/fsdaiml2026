@@ -12,7 +12,7 @@ function App() {
   return (
     <div style={{border:'2px solid black' , height: '320px' , width: '210px'}}>
     
-        <StateHandling />
+        {/* <StateHandling /> */}
      
     </div>
   )
